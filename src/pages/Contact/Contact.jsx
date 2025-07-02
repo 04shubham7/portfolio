@@ -137,7 +137,7 @@ export default function Contact() {
                       placeholder="Your Name"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.name ? "border-pink-400" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-blue-500 focus:outline-none transition-colors text-white`}
                       value={formData.name}
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
@@ -154,7 +154,7 @@ export default function Contact() {
                       placeholder="Your Email"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.email ? "border-pink-400" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-blue-500 focus:outline-none transition-colors text-white`}
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
@@ -173,7 +173,7 @@ export default function Contact() {
                       placeholder="Subject"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.subject ? "border-pink-400" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors`}
+                      } focus:border-blue-500 focus:outline-none transition-colors text-white`}
                       value={formData.subject}
                       onChange={(e) =>
                         setFormData({ ...formData, subject: e.target.value })
@@ -192,7 +192,7 @@ export default function Contact() {
                       rows="4"
                       className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
                         errors.message ? "border-pink-400" : "border-gray-700"
-                      } focus:border-blue-500 focus:outline-none transition-colors resize-none`}
+                      } focus:border-blue-500 focus:outline-none transition-colors resize-none text-white`}
                       value={formData.message}
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
