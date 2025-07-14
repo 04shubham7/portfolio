@@ -6,9 +6,10 @@ import { useState, useEffect, useRef } from "react";
 // Import your images
 import photo1 from "@/assets/images/hero.jpg";
 import photo2 from "@/assets/images/sk.jpg";
-import photo3 from "@/assets/images/img.jpg";
+import photo3 from "@/assets/images/img3.jpg";
+import photo4 from "@/assets/images/img4.jpg";
 
-const photos = [photo1, photo2, photo3];
+const photos = [photo1, photo2, photo3,photo4];
 
 export default function About() {
   const [current, setCurrent] = useState(0);
