@@ -6,6 +6,15 @@ import ParallaxCosmicBackground from "@/components/ui/ParallaxCosmicBackground";
 
 const projects = [
   {
+  "title": "PassM",
+  "description": "A modern password manager web application with secure authentication, mobile compatibility, and a beautiful UI. Users can sign in, manage their credentials, and enjoy a seamless experience across devices.",
+  "src": "passm-logo.png",
+  "link": "https://i.postimg.cc/wBpRWTfC/Screenshot-2025-07-14-002004.png",
+  "color": "#2563eb",
+  "githubLink": "https://github.com/04shubham7/PassM",
+  "liveLink": "https://pass-m-3itr.vercel.app/"
+},
+  {
     title: "Campus Canteen",
     description:
       "A website for the canteens of different colleges where students can order food and get it delivered to their rooms.",
@@ -33,9 +42,36 @@ const projects = [
     link: "https://i.postimg.cc/nVvXXM63/Screenshot-2024-05-28-110137.png",
     color: "#fff",
     githubLink: "https://github.com/04shubham7/City-Public-School",
-    liveLink: "https://citypublicschool.vercel.app/",
   },
-  
+  {
+  "title": "ImgToPDF Vert",
+  "description": "A user-friendly web application that converts images to PDF files quickly and efficiently. Supports multiple image uploads, seamless PDF generation, and works smoothly across devices with an intuitive interface.",
+  "src": "imgtopdf-logo.png",
+  "link": "https://i.postimg.cc/c1cHZG1S/Screenshot-2025-07-14-125117.png",
+  "color": "#22c55e",
+  "githubLink": "https://github.com/04shubham7/ImgtoPdf",
+  "liveLink": "https://imgtopdf-vert.vercel.app/"
+},
+{
+  "title": "To-Do List",
+  "description": "A streamlined to-do list web application designed for efficient task management. Users can add, edit, and remove tasks, mark them as complete, and enjoy a clean, responsive interface that works seamlessly across devices.",
+  "src": "todolist-logo.png",
+  "link": "https://i.postimg.cc/7ZzhFGfB/Screenshot-2025-07-14-125831.png",
+  "color": "#f59e42",
+  "githubLink": "https://github.com/04shubham7/To-do-list/",
+  "liveLink": "https://to-do-list-murex-eta-77.vercel.app/"
+},
+{
+  "title": "Weather Pro",
+  "description": "A modern weather web application delivering real-time forecasts with a sleek and user-friendly interface. Users can search for any city to view current weather, temperature, humidity, wind speed, and more, all optimized for seamless use across devices.",
+  "src": "weatherpro-logo.png",
+  "link": "https://i.postimg.cc/T1BNFH4H/Screenshot-2025-07-14-125312.png",
+  "color": "#38bdf8",
+  "githubLink": "https://github.com/04shubham7/Weather_pro",
+  "liveLink": "https://weather-pro-six.vercel.app/"
+},
+
+
 ];
 
 export default function Projects() {
