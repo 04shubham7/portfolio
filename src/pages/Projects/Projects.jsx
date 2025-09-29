@@ -5,6 +5,15 @@ import PropTypes from "prop-types";
 import ParallaxCosmicBackground from "@/components/ui/ParallaxCosmicBackground";
 
 const projects = [
+{
+  "title": "TalkAi",
+  "description": "An advanced conversational AI platform enabling real-time chat with intelligent agents. Features secure authentication, responsive design, and seamless integration for users to interact and automate tasks.",
+  "src": "talkai-logo.png",
+  "link": "https://i.postimg.cc/0yJxTQCt/talkai-screenshot.png",
+  "color": "#34a853",
+  "githubLink": "https://github.com/04shubham7/TalkAi",
+  "liveLink": "https://talkai-live.vercel.app/"
+}
   {
   "title": "PassM",
   "description": "A modern password manager web application with secure authentication, mobile compatibility, and a beautiful UI. Users can sign in, manage their credentials, and enjoy a seamless experience across devices.",
