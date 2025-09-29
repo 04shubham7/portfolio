@@ -13,7 +13,7 @@ const projects = [
   "color": "#34a853",
   "githubLink": "https://github.com/04shubham7/TalkAi",
   "liveLink": "https://talkai-live.vercel.app/"
-}
+},
   {
   "title": "PassM",
   "description": "A modern password manager web application with secure authentication, mobile compatibility, and a beautiful UI. Users can sign in, manage their credentials, and enjoy a seamless experience across devices.",
