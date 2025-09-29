@@ -12,7 +12,7 @@ const projects = [
   "link": "https://i.postimg.cc/pLFDGP6F/Screenshot-2025-09-15-124911.png",
   "color": "#34a853",
   "githubLink": "https://github.com/04shubham7/TalkAi",
-  "liveLink": "https://talkai-live.vercel.app/"
+  "liveLink": "https://talkai-beta.vercel.app/"
 },
   {
   "title": "PassM",
