@@ -6,6 +6,15 @@ import ParallaxCosmicBackground from "@/components/ui/ParallaxCosmicBackground";
 
 const projects = [
 {
+  "title": "Shyamati",
+  "description": "Shyamati turns a Jupyter-style experiment into a reproducible pipeline, an API that streams plots and PDFs, and a modern dark-themed web app. It includes a “Getting Started” learning page, awareness PDFs (multi-language), and optional deep learning — all wired end-to-end.",
+  "src": "shyamati-logo.png",
+  "link": "https://i.postimg.cc/XJJb0GqP/Screenshot-2025-12-04-094550.png",
+  "color": "#46a985",
+  "githubLink": "https://github.com/04shubham7/BCPM",
+  "liveLink": "https://bcpm.vercel.app/"
+},
+  {
   "title": "TalkAi",
   "description": "An advanced conversational AI platform enabling real-time chat with intelligent agents. Features secure authentication, responsive design, and seamless integration for users to interact and automate tasks.",
   "src": "talkai-logo.png",
