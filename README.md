@@ -63,7 +63,7 @@ This portfolio showcases proficiency in:
 ## 📖 Education
 
 - **Bachelor of Technology, CSE (2023-2027) — IIIT Bhagalpur**
-  - CGPA: 7.24 | Skills: React, Next.js, Tailwind CSS, MongoDB
+  - SGPA: 9.3 | Skills: React, Next.js, Tailwind CSS, MongoDB
 - **Intermediate (2020-2022) — DAV PUBLIC SCHOOL, JAMALPUR**
   - Science | 81.4%
 
