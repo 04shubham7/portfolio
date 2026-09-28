@@ -28,8 +28,8 @@ const IndexPage = () => {
             </div>
 
             {/* Right column - Links + Project poster */}
-            <div className="order-2 md:order-3 flex flex-col gap-6 md:items-end h-full">
-              <div className="w-full md:w-auto h-auto">
+            <div className="order-2 md:order-3 flex flex-col gap-6 h-full w-full">
+              <div className="w-full h-auto">
                 <LinksCard />
               </div>
               <div className="w-full flex-grow">
