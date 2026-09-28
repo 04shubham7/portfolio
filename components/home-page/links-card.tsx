@@ -17,7 +17,7 @@ export default function LinksCard() {
       target="_blank"
       rel="noopener noreferrer"
       title={title}
-      className="group bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors shrink-0 min-w-[64px] min-h-[64px]"
+      className="group bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors shrink-0 min-w-[64px] min-h-[64px] w-full h-full"
     >
       {children}
     </a>
@@ -34,7 +34,7 @@ export default function LinksCard() {
         </div>
 
         {/* Right side: Icon grid */}
-        <div className="grid grid-cols-2 gap-0 border border-zinc-800 rounded-xl overflow-hidden w-full flex-1">
+        <div className="grid grid-cols-2 grid-rows-3 gap-0 border border-zinc-800 rounded-xl overflow-hidden w-full h-full flex-1">
           <LinkBtn href="https://github.com/04shubham7" title="GitHub">
             <Github size={26} className="transition-transform group-hover:scale-110" />
           </LinkBtn>
@@ -50,7 +50,7 @@ export default function LinksCard() {
           <LinkBtn href="https://www.linkedin.com/in/04shubham7/" title="LinkedIn">
             <Linkedin size={24} className="transition-transform group-hover:scale-110" />
           </LinkBtn>
-          <div className="bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white/20 shrink-0 min-w-[64px] min-h-[64px]">
+          <div className="bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white/20 shrink-0 min-w-[64px] min-h-[64px] w-full h-full">
             {/* Empty grid filler to make it 2x3 or evenly distributed */}
             <span className="font-mono text-xs uppercase tracking-widest">[N/A]</span>
           </div>
