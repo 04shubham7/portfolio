@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Download } from "lucide-react";
 import React from "react";
 import { SiDiscord, SiGmail, SiX } from "react-icons/si";
 
@@ -50,10 +50,9 @@ export default function LinksCard() {
           <LinkBtn href="https://www.linkedin.com/in/04shubham7/" title="LinkedIn">
             <Linkedin size={24} className="transition-transform group-hover:scale-110" />
           </LinkBtn>
-          <div className="bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white/20 shrink-0 min-w-[64px] min-h-[64px] w-full h-full">
-            {/* Empty grid filler to make it 2x3 or evenly distributed */}
-            <span className="font-mono text-xs uppercase tracking-widest">[N/A]</span>
-          </div>
+          <LinkBtn href="https://drive.google.com/file/d/1aF0xd0S-B_ugURQ-MRXAWCYrohxbfXxf/view?usp=drive_link" title="Download Resume">
+            <Download size={22} className="transition-transform group-hover:scale-110" />
+          </LinkBtn>
         </div>
       </div>
     </div>
