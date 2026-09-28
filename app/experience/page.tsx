@@ -55,10 +55,10 @@ export default function ExperiencePage() {
           {experienceData.map((exp) => (
             <div
               key={exp.id}
-              className="relative border border-white/20 bg-black p-8 transition-colors duration-300 hover:bg-white/5 group"
+              className="relative rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8 transition-colors duration-300 hover:bg-zinc-800/50 group"
             >
               {/* Top Row: Company & Title & Status & Date */}
-              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-white/10 pb-6">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-zinc-800 pb-6">
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-4">
                     <span className="text-3xl font-black text-white tracking-widest uppercase">{exp.company}</span>

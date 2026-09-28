@@ -92,7 +92,7 @@ export default function ProfileCard() {
   return (
     <>
       {/* CARD */}
-      <div className="bg-black border border-white/20 p-8 w-full h-full flex flex-col relative z-20 transition-all duration-300 hover:bg-white/5">
+      <div className="bg-zinc-900/40 rounded-2xl border border-zinc-800 p-8 w-full h-full flex flex-col relative z-20 transition-all duration-300 hover:bg-zinc-800/50">
         <div className="flex items-start gap-5">
           <img
             src="/sk.jpg"

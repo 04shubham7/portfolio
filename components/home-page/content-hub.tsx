@@ -37,15 +37,15 @@ const hubItems = [
 
 export default function ContentHub() {
   return (
-    <div className="bg-black border border-white/20 p-6 md:p-8 w-full transition-all duration-300 hover:bg-white/5 flex flex-col h-full">
+    <div className="bg-zinc-900/40 rounded-2xl border border-zinc-800 p-6 md:p-8 w-full transition-all duration-300 hover:bg-zinc-800/50 flex flex-col h-full">
       <div className="text-3xl md:text-4xl font-bold text-white tracking-widest uppercase leading-tight mb-6">DAILY<br/>Tool<br/>STACK.</div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border-t border-l border-white/20">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-zinc-800 rounded-xl overflow-hidden">
         {hubItems.map((item) => (
           <AlertDialog key={item.key}>
             <AlertDialogTrigger asChild>
-              <button className={`group text-left p-6 border-r border-b border-white/20 hover:bg-white hover:text-black transition-colors flex flex-col justify-between h-full min-h-[120px]`}>
-                <span className="text-white group-hover:text-black font-semibold uppercase tracking-widest text-sm">{item.label}</span>
-                <span className="text-white/40 group-hover:text-black/40 text-lg self-end mt-4 font-mono" aria-hidden>
+              <button className={`group text-left p-6 border-r border-b border-zinc-800/50 hover:bg-zinc-800 transition-colors flex flex-col justify-between h-full min-h-[120px]`}>
+                <span className="text-white font-semibold uppercase tracking-widest text-sm">{item.label}</span>
+                <span className="text-white/40 text-lg self-end mt-4 font-mono" aria-hidden>
                   {item.emoji}
                 </span>
               </button>

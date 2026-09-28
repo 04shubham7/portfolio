@@ -28,10 +28,10 @@ const rail: RailItem[] = [
 
 export default function ToolsBoard() {
   return (
-    <div className="bg-black border border-white/20 p-6 md:p-8 w-full h-full flex flex-col transition-all duration-300 hover:bg-white/5">
+    <div className="bg-zinc-900/40 rounded-2xl border border-zinc-800 p-6 md:p-8 w-full h-full flex flex-col transition-all duration-300 hover:bg-zinc-800/50">
       <div className="flex gap-6 grow overflow-hidden">
         {/* Left Tool Rail */}
-        <div className="bg-black border border-white/20 p-2 flex flex-col gap-2 w-[60px] min-w-[60px] items-center overflow-y-auto scrollbar-none">
+        <div className="bg-zinc-900 rounded-xl border border-zinc-700/50 p-2 flex flex-col gap-2 w-[60px] min-w-[60px] items-center overflow-y-auto scrollbar-none">
           {rail.map((r, i) => (
             <a
               key={i}
@@ -39,7 +39,7 @@ export default function ToolsBoard() {
               target="_blank"
               rel="noopener noreferrer"
               title={r.label}
-              className={`w-10 h-10 bg-transparent border border-white/20 flex items-center justify-center text-white/50 hover:bg-white hover:text-black transition-colors shrink-0`}
+              className={`w-10 h-10 bg-transparent border border-zinc-700/50 rounded-lg flex items-center justify-center text-white/50 hover:bg-zinc-800 hover:text-white transition-colors shrink-0`}
             >
               {r.icon}
             </a>
@@ -63,7 +63,7 @@ export default function ToolsBoard() {
 
               {/* Blog Link (Monochrome) */}
               <Link href="/blog" className="relative block group">
-                <div className="relative h-12 border border-white bg-white overflow-hidden transition-all duration-300 hover:bg-black">
+                <div className="relative h-12 rounded-xl border border-white bg-white overflow-hidden transition-all duration-300 hover:bg-zinc-900">
                   <div className="relative flex items-center justify-center h-full">
                     <span className="text-black group-hover:text-white text-xl font-bold tracking-widest uppercase transition-colors">ブログ</span>
                   </div>
@@ -75,7 +75,7 @@ export default function ToolsBoard() {
                 href="https://open.spotify.com/track/6DCZcSspjsKoFjzjrWoCdn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex p-3 gap-3 border border-white/20 bg-black relative overflow-hidden h-[100px] transition-colors hover:bg-white/5 group cursor-pointer"
+                className="flex p-3 gap-3 rounded-xl border border-zinc-700/50 bg-zinc-900 relative overflow-hidden h-[100px] transition-colors hover:bg-zinc-800 group cursor-pointer"
               >
                 <SiSpotify size={14} className="absolute top-3 right-3 text-white/30 group-hover:text-white transition-colors" />
 
@@ -126,7 +126,7 @@ export default function ToolsBoard() {
               </a>
 
               {/* Compact System Specs */}
-              <Link href="/" className="relative border border-white/20 bg-black p-3 group flex-1 flex flex-col min-h-[90px] cursor-pointer hover:bg-white/5 transition-colors">
+              <Link href="/" className="relative rounded-xl border border-zinc-700/50 bg-zinc-900 p-3 group flex-1 flex flex-col min-h-[90px] cursor-pointer hover:bg-zinc-800 transition-colors">
                 <div className="relative flex flex-col h-full justify-between z-10">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-transparent border border-white/20 text-white/50 group-hover:text-white group-hover:bg-white/10 transition-colors duration-300">
@@ -151,7 +151,7 @@ export default function ToolsBoard() {
                 href="https://codolio.com/profile/Shubham040711"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-black border border-white/20 flex items-center gap-3 justify-center hover:bg-white hover:text-black transition-colors cursor-pointer group"
+                className="p-3 bg-zinc-900 rounded-xl border border-zinc-700/50 flex items-center gap-3 justify-center hover:bg-zinc-800 hover:text-white transition-colors cursor-pointer group"
               >
                 <img src="/myprofileimage2.png" alt="SG" className="w-6 h-6 border border-white/50 object-cover grayscale group-hover:border-black" />
                 <span className="text-lg font-black leading-none tracking-widest uppercase">CP</span>
@@ -173,8 +173,8 @@ export default function ToolsBoard() {
               </div>
 
               {/* Excellence Tabs */}
-              <div className="border border-white/20 bg-black">
-                <div className="p-3 border-b border-white/20">
+              <div className="border border-zinc-700/50 rounded-xl bg-zinc-900 overflow-hidden">
+                <div className="p-3 border-b border-zinc-700/50">
                   <div className="grid grid-cols-2 gap-2">
                     <Link href="/experience" className="block">
                       <div className="p-2 bg-transparent border border-white/20 hover:bg-white hover:text-black transition-colors text-center group">
@@ -199,14 +199,14 @@ export default function ToolsBoard() {
               </div>
 
               {/* Image card */}
-              <div className="border border-white/20 bg-black flex-1 min-h-[120px] p-2">
-                <img src="/anime.jpg" alt="Card Image" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="border border-zinc-700/50 rounded-xl bg-zinc-900 flex-1 min-h-[120px] p-2 overflow-hidden">
+                <img src="/anime.jpg" alt="Card Image" className="w-full h-full object-cover grayscale rounded-md hover:grayscale-0 transition-all duration-700" />
               </div>
             </div>
           </div>
 
           {/* --- BOTTOM ROW: GITHUB GRAPH (Constrained Width & Height) --- */}
-          <div className="mt-4 border border-white/20 bg-black p-4 text-white">
+          <div className="mt-4 border border-zinc-700/50 rounded-xl bg-zinc-900 p-4 text-white">
             <div className="w-full flex justify-center grayscale contrast-200 opacity-90 hover:grayscale-0 transition-all duration-700">
               <img
                 src="https://ghchart.rshah.org/39d353/04shubham7"

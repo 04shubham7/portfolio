@@ -17,7 +17,7 @@ export default function LinksCard() {
       target="_blank"
       rel="noopener noreferrer"
       title={title}
-      className="group bg-black border border-white/20 p-4 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors shrink-0 min-w-[64px] min-h-[64px]"
+      className="group bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white hover:bg-zinc-800 transition-colors shrink-0 min-w-[64px] min-h-[64px]"
     >
       {children}
     </a>
@@ -25,7 +25,7 @@ export default function LinksCard() {
 
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <div className="flex items-center gap-6 bg-black border border-white/20 p-8 w-full h-full transition-all duration-300 hover:bg-white/5">
+      <div className="flex items-center gap-6 bg-zinc-900/40 rounded-2xl border border-zinc-800 p-8 w-full h-full transition-all duration-300 hover:bg-zinc-800/50">
         {/* Left side: Title */}
         <div className="text-5xl md:text-6xl font-black leading-none tracking-widest text-white uppercase flex flex-col justify-center h-full">
           <div>LIN</div>
@@ -33,7 +33,7 @@ export default function LinksCard() {
         </div>
 
         {/* Right side: Icon grid */}
-        <div className="grid grid-cols-2 gap-0 border-t border-l border-white/20 w-full">
+        <div className="grid grid-cols-2 gap-0 border border-zinc-800 rounded-xl overflow-hidden w-full">
           <LinkBtn href="https://github.com/04shubham7" title="GitHub">
             <Github size={26} className="transition-transform group-hover:scale-110" />
           </LinkBtn>
@@ -49,7 +49,7 @@ export default function LinksCard() {
           <LinkBtn href="https://www.linkedin.com/in/04shubham7/" title="LinkedIn">
             <Linkedin size={24} className="transition-transform group-hover:scale-110" />
           </LinkBtn>
-          <div className="bg-black border border-white/20 p-4 flex items-center justify-center text-white/20 shrink-0 min-w-[64px] min-h-[64px]">
+          <div className="bg-transparent border-r border-b border-zinc-800/50 p-4 flex items-center justify-center text-white/20 shrink-0 min-w-[64px] min-h-[64px]">
             {/* Empty grid filler to make it 2x3 or evenly distributed */}
             <span className="font-mono text-xs uppercase tracking-widest">[N/A]</span>
           </div>

@@ -82,10 +82,10 @@ export default function ProjectsPage() {
               return (
                 <div
                   key={project.title}
-                  className="flex flex-col group h-full border border-white/20 bg-black transition-colors duration-300 hover:bg-white/5"
+                  className="flex flex-col group h-full rounded-2xl border border-zinc-800 bg-zinc-900/40 transition-colors duration-300 hover:bg-zinc-800/50 overflow-hidden"
                 >
                   {/* Image Container */}
-                  <div className="relative w-full aspect-[4/3] border-b border-white/20 flex items-center justify-center p-6 bg-black">
+                  <div className="relative w-full aspect-[4/3] border-b border-zinc-800 flex items-center justify-center p-6 bg-zinc-900/80">
                     {project.image ? (
                       <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 overflow-hidden">
                         <Image
@@ -123,7 +123,7 @@ export default function ProjectsPage() {
 
                     {/* Expandable Content (Links) */}
                     {isExpanded && (
-                      <div className="flex gap-4 mb-6 pt-4 border-t border-white/10">
+                      <div className="flex gap-4 mb-6 pt-4 border-t border-zinc-800">
                         {project.url && (
                           <Link 
                             href={project.url} 
@@ -146,7 +146,7 @@ export default function ProjectsPage() {
                     )}
 
                     {/* Tech Badges (Pushed to bottom) */}
-                    <div className="mt-auto pt-6 border-t border-white/10 flex flex-wrap gap-2">
+                    <div className="mt-auto pt-6 border-t border-zinc-800 flex flex-wrap gap-2">
                       {project.tech?.map((tech: string, i: number) => (
                         <TechBadge key={`${tech}-${i}`} tech={tech} showName />
                       ))}

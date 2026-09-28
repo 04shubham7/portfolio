@@ -81,10 +81,10 @@ export default function AchievementsPage() {
           {achievementsData.map((achievement) => (
             <div
               key={achievement.id}
-              className="relative border border-white/20 bg-black p-8 transition-colors duration-300 hover:bg-white/5 group"
+              className="relative rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8 transition-colors duration-300 hover:bg-zinc-800/50 group"
             >
               {/* Top Row: Title & Subtitle & Badge & Year */}
-              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-white/10 pb-6">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-8 border-b border-zinc-800 pb-6">
                 <div className="flex flex-col gap-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 border border-white/20 bg-black flex items-center justify-center group-hover:bg-white group-hover:border-white transition-colors">

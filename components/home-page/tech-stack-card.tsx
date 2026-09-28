@@ -37,7 +37,7 @@ export default function TechStackCard() {
   const renderBadge = (text: string) => (
     <div
       key={text}
-      className="group border border-white/20 bg-black text-white hover:bg-white hover:text-black px-4 py-2 text-xs font-bold uppercase tracking-widest cursor-pointer flex items-center justify-center gap-3 select-none transition-colors"
+      className="group border border-zinc-700/50 bg-zinc-900 text-white hover:bg-zinc-800 hover:text-white px-4 py-2 text-xs font-bold uppercase tracking-widest cursor-pointer flex items-center justify-center gap-3 select-none transition-colors"
     >
       <span>{getIcon(text)}</span>
       <span>{text}</span>
@@ -45,7 +45,7 @@ export default function TechStackCard() {
   );
 
   return (
-    <div className="bg-black border border-white/20 p-6 md:p-8 h-full transition-all duration-300 hover:bg-white/5 flex flex-col">
+    <div className="bg-zinc-900/40 rounded-2xl border border-zinc-800 p-6 md:p-8 h-full transition-all duration-300 hover:bg-zinc-800/50 flex flex-col">
       <div className="text-3xl md:text-4xl font-black text-white mb-8 tracking-widest uppercase">
         SKILLS<span className="text-white/40">.</span>
       </div>
