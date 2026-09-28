@@ -93,15 +93,15 @@ export default function ProfileCard() {
     <>
       {/* CARD */}
       <div className="bg-zinc-900/40 rounded-2xl border border-zinc-800 p-8 w-full h-full flex flex-col relative z-20 transition-all duration-300 hover:bg-zinc-800/50">
-        <div className="flex items-start gap-5">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left w-full">
           <img
             src="/sk.jpg"
             alt="SK"
-            className="w-[72px] h-[72px] border border-white/20 object-cover grayscale"
+            className="w-[72px] h-[72px] border border-white/20 object-cover grayscale shrink-0 mb-2 sm:mb-0"
           />
 
-          <div className="flex-1">
-            <div className="flex items-center justify-between">
+          <div className="flex-1 w-full">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
               <div>
                 <div className="text-2xl font-semibold text-white tracking-tight">Shubham Kumar</div>
                 <div className="text-sm text-white/50 tracking-widest uppercase mt-1">@04shubham7</div>
@@ -109,7 +109,7 @@ export default function ProfileCard() {
 
               <div
                 onClick={handleYoruClick}
-                className="cursor-pointer text-white/40 hover:text-white p-2 text-xs font-medium uppercase tracking-widest transition-colors"
+                className="cursor-pointer text-white/40 hover:text-white p-2 text-xs font-medium uppercase tracking-widest transition-colors mt-2 sm:mt-0"
               >
                 [ Cat ]
               </div>

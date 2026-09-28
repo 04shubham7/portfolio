@@ -25,11 +25,10 @@ export default function LinksCard() {
 
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <div className="flex items-center gap-6 bg-zinc-900/40 rounded-2xl border border-zinc-800 p-8 w-full h-full transition-all duration-300 hover:bg-zinc-800/50">
+      <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-6 bg-zinc-900/40 rounded-2xl border border-zinc-800 p-8 w-full h-full transition-all duration-300 hover:bg-zinc-800/50">
         {/* Left side: Title */}
-        <div className="text-5xl md:text-6xl font-black leading-none tracking-widest text-white uppercase flex flex-col justify-center h-full">
-          <div>LIN</div>
-          <div>KS.</div>
+        <div className="text-5xl md:text-6xl font-black leading-none tracking-widest text-white uppercase flex flex-col justify-center h-full text-center sm:text-left">
+          LINKS<span className="text-white/40">.</span>
         </div>
 
         {/* Right side: Icon grid */}
