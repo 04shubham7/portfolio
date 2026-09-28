@@ -16,6 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shubhamkumar.com"), // Replace with actual domain
   title: {
     default: "Shubham Kumar | Full-Stack Developer",
     template: "%s | Shubham Kumar"
