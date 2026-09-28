@@ -3,6 +3,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Edge = "bottom" | "top" | "left" | "right";
@@ -141,72 +142,78 @@ export default function ProfileCard() {
         </div>
       </div>
 
-      {/* ✧ PAW TRAIL (Changed to Sparkles) */}
-      {paws.map((paw) => (
-        <motion.div
-          key={paw.id}
-          initial={{ opacity: 0.8, scale: 1 }}
-          animate={{ opacity: 0, scale: 0.5 }}
-          transition={{ duration: 0.8 }}
-          className="fixed text-white text-xs pointer-events-none z-40"
-          style={{ left: paw.x, top: paw.y }}
-        >
-          ✧
-        </motion.div>
-      ))}
+      {/* PORTAL FOR FIXED ELEMENTS (Trails & Cat) to escape transform context */}
+      {mounted && typeof document !== "undefined" && createPortal(
+        <>
+          {/* ✧ PAW TRAIL (Changed to Sparkles) */}
+          {paws.map((paw) => (
+            <motion.div
+              key={paw.id}
+              initial={{ opacity: 0.8, scale: 1 }}
+              animate={{ opacity: 0, scale: 0.5 }}
+              transition={{ duration: 0.8 }}
+              className="fixed text-white text-xs pointer-events-none z-40 flex items-center justify-center w-4 h-4 -ml-2 -mt-2"
+              style={{ left: paw.x, top: paw.y }}
+            >
+              ✧
+            </motion.div>
+          ))}
 
-      {/* 🐱 CAT */}
-      <AnimatePresence>
-        {catPeeking && (
-          <motion.div
-            initial={{
-              x:
-                catPosition === "left"
-                  ? "-100%"
-                  : catPosition === "right"
-                  ? "100%"
-                  : 0,
-              y:
-                catPosition === "top"
-                  ? "-100%"
-                  : catPosition === "bottom"
-                  ? "100%"
-                  : 0,
-            }}
-            animate={{
-              x: cursor.x * 0.02, // 👈 follows cursor slightly
-              y: cursor.y * 0.02,
-            }}
-            exit={{ opacity: 0 }}
-            transition={{ type: "spring", stiffness: 120 }}
-            className={`fixed z-50 pointer-events-none ${
-              catPosition === "bottom"
-                ? "bottom-0 left-1/2 -translate-x-1/2"
-                : catPosition === "top"
-                ? "top-0 left-1/2 -translate-x-1/2"
-                : catPosition === "left"
-                ? "left-0 top-1/2 -translate-y-1/2"
-                : "right-0 top-1/2 -translate-y-1/2"
-            }`}
-          >
-            <div className="flex flex-col items-center relative">
+          {/* 🐱 CAT */}
+          <AnimatePresence>
+            {catPeeking && (
+              <motion.div
+                initial={{
+                  x:
+                    catPosition === "left"
+                      ? "-100%"
+                      : catPosition === "right"
+                      ? "100%"
+                      : 0,
+                  y:
+                    catPosition === "top"
+                      ? "-100%"
+                      : catPosition === "bottom"
+                      ? "100%"
+                      : 0,
+                }}
+                animate={{
+                  x: cursor.x * 0.02, // 👈 follows cursor slightly
+                  y: cursor.y * 0.02,
+                }}
+                exit={{ opacity: 0 }}
+                transition={{ type: "spring", stiffness: 120 }}
+                className={`fixed z-50 pointer-events-none ${
+                  catPosition === "bottom"
+                    ? "bottom-0 left-1/2 -translate-x-1/2"
+                    : catPosition === "top"
+                    ? "top-0 left-1/2 -translate-x-1/2"
+                    : catPosition === "left"
+                    ? "left-0 top-1/2 -translate-y-1/2"
+                    : "right-0 top-1/2 -translate-y-1/2"
+                }`}
+              >
+                <div className="flex flex-col items-center relative">
 
-              {/* BAYMAX HEAD */}
-              <div className="bg-white rounded-[40px] w-32 h-20 shadow-2xl relative flex items-center justify-center border-2 border-zinc-200/50">
-                {/* EYES & CONNECTING LINE */}
-                <div className="flex items-center relative">
-                  {/* Left Eye */}
-                  <div className="w-5 h-5 bg-black rounded-full z-10"></div>
-                  {/* Connecting Line */}
-                  <div className="w-8 h-[2px] bg-black"></div>
-                  {/* Right Eye */}
-                  <div className="w-5 h-5 bg-black rounded-full z-10"></div>
+                  {/* BAYMAX HEAD */}
+                  <div className="bg-white rounded-[40px] w-32 h-20 shadow-2xl relative flex items-center justify-center border-2 border-zinc-200/50">
+                    {/* EYES & CONNECTING LINE */}
+                    <div className="flex items-center relative">
+                      {/* Left Eye */}
+                      <div className="w-5 h-5 bg-black rounded-full z-10"></div>
+                      {/* Connecting Line */}
+                      <div className="w-8 h-[2px] bg-black"></div>
+                      {/* Right Eye */}
+                      <div className="w-5 h-5 bg-black rounded-full z-10"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </>,
+        document.body
+      )}
     </>
   );
 }
