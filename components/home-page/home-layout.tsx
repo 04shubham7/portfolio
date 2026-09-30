@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import TiltWrapper from "@/components/tilt-wrapper";
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -32,26 +34,26 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
     >
       {/* Left column - Tech stack */}
       <motion.div variants={item} className="order-3 md:order-1 h-full">
-        {childrenArray[0]}
+        <TiltWrapper>{childrenArray[0]}</TiltWrapper>
       </motion.div>
 
       {/* Center column - Profile + Tools board */}
       <motion.div variants={item} className="order-1 md:order-2 flex flex-col gap-6 w-full h-full">
         <div className="w-full min-h-[300px]">
-          {childrenArray[1]}
+          <TiltWrapper>{childrenArray[1]}</TiltWrapper>
         </div>
         <div className="flex-grow w-full">
-          {childrenArray[2]}
+          <TiltWrapper>{childrenArray[2]}</TiltWrapper>
         </div>
       </motion.div>
 
       {/* Right column - Links + Project poster */}
       <motion.div variants={item} className="order-2 md:order-3 flex flex-col gap-6 h-full w-full">
         <div className="w-full h-auto">
-          {childrenArray[3]}
+          <TiltWrapper>{childrenArray[3]}</TiltWrapper>
         </div>
         <div className="w-full flex-grow">
-          {childrenArray[4]}
+          <TiltWrapper>{childrenArray[4]}</TiltWrapper>
         </div>
       </motion.div>
     </motion.div>
